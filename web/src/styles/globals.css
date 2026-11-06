@@ -30,7 +30,7 @@ body {
   margin: 0;
   background: var(--nx-white);
   color: var(--nx-ink);
-  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-family: "DM Sans Variable", system-ui, sans-serif;
 }
 
 a {
