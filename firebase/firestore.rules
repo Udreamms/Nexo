@@ -1,0 +1,20 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Por defecto todo cerrado: el acceso pasa por el backend (Admin SDK).
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Valores públicos de configuración (p. ej. UF del día).
+    match /config/{doc} {
+      allow read: if true;
+    }
+
+    // Planes publicados, solo lectura.
+    match /plans/{planId} {
+      allow read: if true;
+    }
+  }
+}

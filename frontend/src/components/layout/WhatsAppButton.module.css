@@ -1,0 +1,19 @@
+.button {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 5;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #1fa855;
+  color: var(--nx-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.18);
+}
+
+.button:hover {
+  color: var(--nx-white);
+}

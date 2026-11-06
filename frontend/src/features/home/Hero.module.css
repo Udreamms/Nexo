@@ -1,0 +1,129 @@
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background: var(--nx-bg);
+}
+
+.photo {
+  flex: 1 1 62%;
+  min-width: 0;
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/banner-sin-texto.jpg");
+  background-size: cover;
+  background-position: 22% center;
+}
+
+.veil {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(18, 22, 44, 0.42) 0%,
+    rgba(18, 22, 44, 0.18) 45%,
+    rgba(18, 22, 44, 0) 65%
+  );
+}
+
+.text {
+  position: relative;
+  max-width: 500px;
+  padding: 100px 40px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  color: var(--nx-white);
+}
+
+.text h1 {
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(36px, 3.7vw, 54px);
+  line-height: 1.06;
+  letter-spacing: -0.03em;
+  text-shadow: 0 2px 18px rgba(10, 14, 30, 0.25);
+}
+
+.text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.94);
+  max-width: 400px;
+  text-shadow: 0 1px 10px rgba(10, 14, 30, 0.3);
+}
+
+.formWrap {
+  flex: 1 1 440px;
+  max-width: 540px;
+  min-width: 0;
+  background: var(--nx-bg);
+  padding: 30px 40px 26px;
+}
+
+.mobileTitle {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.mobileHeading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
+.mobileSub {
+  margin: 0;
+  font-size: 15.5px;
+  line-height: 1.55;
+  color: var(--nx-ink-soft);
+}
+
+@media (max-width: 1060px) {
+  .formWrap {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+
+  .photo {
+    min-height: 440px;
+  }
+
+  .text {
+    padding: 80px 32px 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formWrap {
+    order: -1;
+    padding: 28px 16px;
+  }
+
+  .mobileTitle {
+    display: flex;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .photo {
+    min-height: 300px;
+  }
+
+  .image {
+    background-position: 74% center;
+  }
+}

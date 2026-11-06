@@ -1,0 +1,487 @@
+.section {
+  background: var(--nx-white);
+}
+
+.inner {
+  max-width: var(--nx-max);
+  margin: 0 auto;
+  padding: 88px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.innerCol {
+  max-width: var(--nx-max);
+  margin: 0 auto;
+  padding: 88px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.eyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--nx-brand-700);
+}
+
+.h2 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0;
+  font-size: 16.5px;
+  line-height: 1.6;
+  color: var(--nx-ink-soft);
+}
+
+.sideCol {
+  flex: 1 1 260px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.textLink {
+  color: var(--nx-ink);
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid var(--nx-ink);
+  padding-bottom: 2px;
+  align-self: flex-start;
+}
+
+.textLink:hover {
+  color: var(--nx-ink);
+}
+
+/* Franja de Isapres */
+.strip {
+  background: var(--nx-white);
+  border-bottom: 1px solid var(--nx-line);
+}
+
+.stripInner {
+  max-width: var(--nx-max);
+  margin: 0 auto;
+  padding: 30px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 34px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stripLabel {
+  font-size: 14px;
+  color: var(--nx-brand-500);
+}
+
+.stripName {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--nx-brand-700);
+  white-space: nowrap;
+}
+
+/* Cómo funciona */
+.how {
+  background: var(--nx-bg-cool);
+}
+
+.steps {
+  flex: 999 1 760px;
+  min-width: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.step {
+  flex: 1 1 200px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.stepNum {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--nx-gradient);
+  color: var(--nx-white);
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepIcon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--nx-brand-tint);
+  color: var(--nx-brand-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTitle {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.stepText {
+  font-size: 14.5px;
+  color: var(--nx-ink-mute);
+  line-height: 1.55;
+}
+
+/* Por qué Nexo */
+.whyInner {
+  max-width: var(--nx-max);
+  margin: 0 auto;
+  padding: 88px 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  align-items: center;
+}
+
+.whyPhoto {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.whyImage {
+  height: 520px;
+  border-radius: 24px;
+  background-image: url("/images/familia-parque.jpg");
+  background-size: cover;
+  background-position: 58% center;
+}
+
+.whyText {
+  flex: 1 1 480px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+}
+
+.benefit {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--nx-line);
+}
+
+.benefitIcon {
+  color: var(--nx-brand-700);
+  display: flex;
+}
+
+.benefitBody {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.benefitTitle {
+  font-size: 16.5px;
+  font-weight: 500;
+}
+
+.benefitText {
+  font-size: 14.5px;
+  color: var(--nx-ink-mute);
+}
+
+.note {
+  font-size: 15.5px;
+  font-weight: 500;
+  color: var(--nx-brand-700);
+  padding-top: 8px;
+}
+
+/* Banner CTA */
+.banner {
+  position: relative;
+  overflow: hidden;
+  background: var(--nx-gradient);
+  color: var(--nx-white);
+}
+
+.orb,
+.orb2 {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.orb {
+  width: 620px;
+  height: 620px;
+  right: -160px;
+  top: -220px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.16) 0%, rgba(255, 255, 255, 0) 68%);
+  animation: orbit 14s ease-in-out infinite;
+}
+
+.orb2 {
+  width: 520px;
+  height: 520px;
+  left: -180px;
+  bottom: -260px;
+  background: radial-gradient(circle, rgba(184, 174, 236, 0.3) 0%, rgba(184, 174, 236, 0) 70%);
+  animation: orbit 18s ease-in-out infinite reverse;
+}
+
+@keyframes orbit {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-30px, 24px);
+  }
+}
+
+.dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 26px 26px;
+  mask-image: linear-gradient(180deg, transparent 0%, #000 50%, transparent 100%);
+}
+
+.bannerInner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 28px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+  text-align: center;
+}
+
+.bannerEyebrow {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.bannerTitle {
+  margin: 0;
+  font-weight: 500;
+  font-size: clamp(30px, 3.5vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+}
+
+.bannerTitle small {
+  font-size: inherit;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.bannerText {
+  font-size: 19px;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.88);
+  max-width: 560px;
+}
+
+.bannerCta {
+  background: var(--nx-white);
+  color: var(--nx-brand-900);
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  padding: 17px 30px;
+  margin-top: 6px;
+  box-shadow: 0 14px 34px rgba(10, 8, 30, 0.3);
+  transition: transform 0.2s;
+}
+
+.bannerCta:hover {
+  color: var(--nx-brand-900);
+  transform: translateY(-2px);
+}
+
+.checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  justify-content: center;
+  font-size: 14.5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 900px) {
+  .oneLine {
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb,
+  .orb2 {
+    animation: none;
+  }
+}
+
+/* Testimonios */
+.testimonials {
+  background: var(--nx-bg);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+}
+
+.card {
+  flex: 1 1 300px;
+  min-width: 0;
+  margin: 0;
+  background: var(--nx-white);
+  border: 1px solid var(--nx-line);
+  border-radius: 22px;
+  padding: 28px;
+  box-shadow: 0 10px 30px rgba(28, 31, 58, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quoteMark {
+  font-size: 54px;
+  line-height: 0.6;
+  height: 26px;
+  font-weight: 500;
+}
+
+.quote {
+  margin: 0;
+  flex: 1 1 auto;
+  font-size: 16.5px;
+  line-height: 1.6;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-top: 1px solid var(--nx-line);
+  padding-top: 16px;
+}
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--nx-brand-tint);
+  color: var(--nx-brand-700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+}
+
+.authorInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.authorName {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.authorMeta {
+  font-size: 13.5px;
+  color: var(--nx-ink-mute);
+}
+
+/* Preguntas frecuentes */
+.faqList {
+  flex: 999 1 640px;
+  min-width: 0;
+  border-top: 1px solid var(--nx-line);
+}
+
+.faqItem {
+  border-bottom: 1px solid var(--nx-line);
+  padding: 20px 0;
+}
+
+.faqItem summary {
+  list-style: none;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.faqItem summary::-webkit-details-marker {
+  display: none;
+}
+
+.faqItem summary::after {
+  content: "+";
+  float: right;
+  font-weight: 400;
+  color: var(--nx-brand-700);
+  font-size: 22px;
+  line-height: 1;
+}
+
+.faqItem[open] summary::after {
+  content: "–";
+}
+
+.faqItem p {
+  margin: 10px 0 0;
+  color: var(--nx-ink-soft);
+  line-height: 1.6;
+  font-size: 15.5px;
+}
+
+@media (max-width: 700px) {
+  .h2 {
+    font-size: 28px;
+  }
+}

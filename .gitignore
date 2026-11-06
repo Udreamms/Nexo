@@ -1,0 +1,20 @@
+node_modules/
+dist/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Entorno y credenciales
+.env
+.env.*
+!.env.example
+serviceAccount*.json
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log
+ui-debug.log
+
+.DS_Store

@@ -1,0 +1,63 @@
+:root {
+  --nx-ink: #1c1f3a;
+  --nx-ink-soft: #4b4e63;
+  --nx-ink-mute: #6e7085;
+  --nx-line: #e4e0d8;
+  --nx-line-strong: #dcd8d0;
+  --nx-bg: #f6f4f0;
+  --nx-bg-cool: #eef0f4;
+  --nx-white: #ffffff;
+  --nx-brand-900: #2b2459;
+  --nx-brand-700: #4a418a;
+  --nx-brand-500: #7d72bc;
+  --nx-brand-tint: #efedf6;
+  --nx-gradient: linear-gradient(135deg, #2b2459 0%, #4a418a 50%, #7d72bc 100%);
+  --nx-gradient-text: linear-gradient(90deg, #2b2459 0%, #5a4f9e 55%, #8a7fc6 100%);
+  --nx-max: 1280px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--nx-white);
+  color: var(--nx-ink);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+a {
+  color: #5b3fd9;
+}
+
+a:hover {
+  color: #3f27a8;
+}
+
+.nx-gradient-text {
+  background: var(--nx-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+input:focus,
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #5b3fd9;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
