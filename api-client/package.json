@@ -1,0 +1,21 @@
+{
+  "name": "@nexo/api-client",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Cliente tipado de la API de Nexo, compartido por web, Android e iOS",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsc -p tsconfig.json && node --test dist/client.test.js"
+  },
+  "dependencies": {
+    "@nexo/shared": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}

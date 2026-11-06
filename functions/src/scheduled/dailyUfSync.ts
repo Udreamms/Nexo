@@ -6,7 +6,7 @@ interface MIndicadorUf {
   serie: Array<{ valor: number; fecha: string }>;
 }
 
-/** Guarda el valor diario de la UF en `config/uf` para que backend y frontend lo lean. */
+/** Guarda el valor diario de la UF en `config/uf` para que el backend y los clientes lo lean. */
 export const dailyUfSync = onSchedule(
   { schedule: "every day 08:00", timeZone: "America/Santiago" },
   async () => {

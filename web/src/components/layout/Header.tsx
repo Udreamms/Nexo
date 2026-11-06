@@ -12,12 +12,12 @@ export function Header() {
           <span className={styles.sub}>salud</span>
         </Link>
         <nav aria-label="Principal" className={styles.nav}>
-          <a href="/#como">Cómo funciona</a>
-          <a href="/#preguntas">Preguntas</a>
+          <Link href="/#como">Cómo funciona</Link>
+          <Link href="/#preguntas">Preguntas</Link>
         </nav>
-        <a href="/#cotizar" className={styles.cta}>
+        <Link href="/#cotizar" className={styles.cta}>
           Cotiza tu Isapre <Icon name="arrow" size={18} />
-        </a>
+        </Link>
       </div>
     </header>
   );

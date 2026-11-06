@@ -1,26 +1,33 @@
 {
   "name": "nexo",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Nexo Salud: comparador y cotizador de planes de Isapre",
   "workspaces": [
     "shared",
-    "frontend",
+    "api-client",
+    "web",
     "backend",
-    "functions"
+    "functions",
+    "android",
+    "ios"
   ],
   "engines": {
     "node": ">=20"
   },
   "scripts": {
-    "dev": "npm run build -w shared && npm run dev -w frontend",
-    "dev:frontend": "npm run dev -w frontend",
+    "dev": "npm run dev:web",
+    "dev:web": "npm run build:libs && npm run dev -w web",
     "dev:backend": "npm run dev -w backend",
-    "build": "npm run build -w shared && npm run build -w frontend && npm run build -w backend && npm run build -w functions",
-    "start": "npm run start -w frontend",
-    "typecheck": "npm run build -w shared && npm run typecheck -w frontend && npm run typecheck -w backend && npm run typecheck -w functions",
-    "lint": "npm run lint -w frontend",
-    "test": "npm run test -w shared",
+    "dev:android": "npm run start -w android",
+    "dev:ios": "npm run start -w ios",
+    "build:libs": "npm run build -w shared && npm run build -w api-client",
+    "build": "npm run build:libs && npm run build -w web && npm run build -w backend && npm run build -w functions",
+    "start": "npm run start -w web",
+    "typecheck": "npm run build:libs && npm run typecheck -w web && npm run typecheck -w backend && npm run typecheck -w functions && npm run typecheck -w android && npm run typecheck -w ios",
+    "lint": "npm run lint -w web",
+    "test": "npm run build:libs && npm run test -w shared && npm run test -w api-client && npm run test -w backend",
+    "check": "npm run typecheck && npm run test && npm run build",
     "emulators": "npx firebase-tools emulators:start --config firebase/firebase.json",
     "deploy:rules": "npx firebase-tools deploy --only firestore:rules,firestore:indexes,storage --config firebase/firebase.json",
     "deploy:functions": "npx firebase-tools deploy --only functions --config firebase/firebase.json"

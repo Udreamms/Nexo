@@ -1,0 +1,17 @@
+{
+  "expo": {
+    "name": "Nexo Salud",
+    "slug": "nexo-salud-android",
+    "version": "0.2.0",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "android": {
+      "package": "cl.nexo.salud"
+    },
+    "plugins": [
+      "expo-status-bar"
+    ]
+  }
+}

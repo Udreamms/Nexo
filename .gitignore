@@ -18,3 +18,10 @@ firestore-debug.log
 ui-debug.log
 
 .DS_Store
+
+# Expo / móvil
+.expo/
+expo-env.d.ts
+*.apk
+*.aab
+*.ipa

@@ -11,4 +11,7 @@ export const quoteController = {
     const result = await leadService.register(req.body as LeadRequest);
     res.status(201).json(result);
   },
+  async listLeads(_req: Request, res: Response) {
+    res.json({ leads: await leadService.list() });
+  },
 };

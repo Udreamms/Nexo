@@ -18,7 +18,7 @@ export function Footer() {
           </div>
           <div className={styles.col}>
             <strong>Herramientas</strong>
-            <a href="/#cotizar">Cotiza tu Isapre</a>
+            <Link href="/#cotizar">Cotiza tu Isapre</Link>
           </div>
           <div className={styles.col}>
             <strong>Nexo</strong>
